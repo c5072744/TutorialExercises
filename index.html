@@ -1,19 +1,32 @@
+<!DOCTYPE html>
 <html>
 
 <head>
 <title>Hello World!</title>
+<style>
+    body {background-color: lightsteelblue;
+    font-family: Arial, Helvetica, sans-serif;}
+    div {
+        width:400px;
+        margin: auto;
+        padding:5px;
+        border: 2px solid coral;
+    }
+</style>
 </head>
 
 <body>
-    <h1 style="color: midnightblue;">Wellbeing Through Movement</h1>
-    <h2 style="color: cornflowerblue;">A resource for people with a history of cancer</h2>
+    <h1 style="color: midnightblue;">My Tutorial testing page</h1>
+    <h2 style="color: midnightblue;">A place to work through my web tech learning</h2>
     <hr>
 
-    <p>This is filler text that will be replaced when needed.<br>In the meantime, visit a useless website for fun with the link below.</p>
-    <p><a href="https://theuselessweb.com/"><b>Find a Useless Website</b></a></p>
+    <p>My name is Cindy and I am learning how to create a web application.<br>Please, visit a useless website for fun with the link below.</p>
+    <div>
+        <a href="https://theuselessweb.com/" alt="Visit a random useless website"><b>Visit a Useless Website</b></a>
+    </div>
     <!-- I am curious how to do mouse-over text in an image.-->
     <h3>This image dates me a bit...</h3>
-    <p><img src="https://images.gmanews.tv/webpics/2020/11/charlie_2020_11_28_15_36_03.jpg" width="800" height="500" alt="Charlie the Unicorn" title="Who else is old enough to remember this when it happened?"></p>
+    <p><img src="https://images.gmanews.tv/webpics/2020/11/charlie_2020_11_28_15_36_03.jpg" width="800" height="500" aria-label="A cartoon image of three unicorns, two excited looking, one skeptical looking. The skeptical one is Charlie." alt="Charlie the Unicorn" title="Who else is old enough to remember this when it happened?"></p>
     <!--I figured it out. first I had the title in the paragraph which meant the mouseover was the whole width and not just the image.-->
 </body>
 </html>

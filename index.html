@@ -2,40 +2,11 @@
 <html lang="en">
 
 <head>
-<title>Hello World!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        padding: 0 1rem;
-        background-color: lightsteelblue;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    h1, h2, h3 {
-        text-align: center;
-        color: midnightblue;
-    }
-    p {
-        max-width: 70ch;
-    }
-    div {
-        max-width:400px;
-        margin: auto;
-        padding:5px;
-        border: 2px solid coral;
-        text-align: center;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    figure {
-        margin: 0;
-    }
-    a {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="tutorial.js" defer></script>
 </head>
 
 <body>
@@ -57,5 +28,43 @@
            title="Who else is old enough to remember this when it happened?">
         <!--I figured it out. first I had the title in the paragraph which meant the mouseover was the whole width and not just the image.-->
     </figure>
+    <h2>Quiz time!</h2>
+    <p>Time for a short quiz to test out forms.</p>
+    <form method="get" id="quiz">
+        <label for="favfood">What is your favourite food?</label>
+        <input type="text" id="favfood" name="favfood"><br><br>
+      <fieldset>
+        <legend>What is the best pet?</legend>  
+        <input type="radio" id="dog" name="fav_pet" value="Dog">
+        <label for="dog">Dog</label><br>
+        <input type="radio" name="fav_pet" id="cat" value="Cat">
+        <label for="cat">Cat</label><br>
+        <input type="radio" id="other" name="fav_pet" value="Other">
+        <label for="other">Another type of pet</label><br>
+        <input type="radio" id="all" name="fav_pet" value="All">
+        <label for="all">All of the above</label><br>
+        <input type="radio" id="none" name="fav_pet" value="None">
+        <label for="none">None</label><br>
+      </fieldset><br>
+      <fieldset>
+        <legend>What continents have you been on? Select all applicable.</legend>
+        <input type="checkbox" id="continent1" name="continents" value="Africa">
+        <label for="continent1">Africa</label><br>
+        <input type="checkbox" id="continent2" name="continents" value="Antarctica">
+        <label for="continent2">Antarctica</label><br>
+        <input type="checkbox" id="continent3" name="continents" value="Asia">
+        <label for="continent3">Asia</label><br>
+        <input type="checkbox" id="continent4" name="continents" value="Europe">
+        <label for="continent4">Europe</label><br>
+        <input type="checkbox" id="continent5" name="continents" value="North America">
+        <label for="continent5">North America</label><br>
+        <input type="checkbox" id="continent6" name="continents" value="Oceania">
+        <label for="continent6">Oceania</label><br>
+        <input type="checkbox" id="continent7" name="continents" value="South America">
+        <label for="continent7">South America</label><br>
+      </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
 </body>
 </html>

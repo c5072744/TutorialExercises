@@ -19,4 +19,5 @@ form.addEventListener("submit", function (event) {
                   ". I've been to " + places + ".";
 
   result.textContent = message;
+  result.focus();
 });
